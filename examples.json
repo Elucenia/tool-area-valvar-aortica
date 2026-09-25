@@ -1,0 +1,48 @@
+[
+  {
+    "label": "VSVE 2,0 cm · VTI 20 · VTI aórtico 80 · Vmáx 4,0: AVA 0,79 cm² (importante)",
+    "input": {
+      "dvsve": 2,
+      "vtivsve": 20,
+      "vtiao": 80,
+      "vmax": 4
+    },
+    "expected": {
+      "raw": {
+        "ava": 0.785,
+        "dvi": 0.25
+      },
+      "tol": 0.001,
+      "level": "high"
+    },
+    "originalInput": {
+      "dvsve": 2,
+      "vtivsve": 20,
+      "vtiao": 80,
+      "vmax": 4
+    },
+    "expandedZeroOptions": []
+  },
+  {
+    "label": "VSVE 2,2 cm · VTI 22 · VTI aórtico 60: AVA 1,39 cm² (moderada)",
+    "input": {
+      "dvsve": 2.2,
+      "vtivsve": 22,
+      "vtiao": 60
+    },
+    "expected": {
+      "raw": {
+        "ava": 1.3938,
+        "dvi": 0.3667
+      },
+      "tol": 0.001,
+      "level": "mid"
+    },
+    "originalInput": {
+      "dvsve": 2.2,
+      "vtivsve": 22,
+      "vtiao": 60
+    },
+    "expandedZeroOptions": []
+  }
+]

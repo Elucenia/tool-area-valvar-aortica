@@ -1,0 +1,191 @@
+{
+  "tool": {
+    "id": "area-valvar-aortica",
+    "title": "Área valvar aórtica (equação de continuidade)",
+    "short": "Estenose aórtica no ecocardiograma",
+    "spec": [
+      "cardiologia",
+      "cirurgia-cardiovascular"
+    ],
+    "desc": "Calcule a área valvar aórtica pela equação de continuidade, o índice adimensional (DVI) e o gradiente máximo pela equação de Bernoulli, com a graduação da estenose.",
+    "lead": "Calcula a área valvar aórtica pela equação de continuidade, o índice adimensional e o gradiente máximo, e gradua a estenose aórtica.",
+    "fields": [
+      [
+        "dvsve",
+        "Diâmetro da via de saída do VE",
+        "num",
+        {
+          "min": 1.2,
+          "max": 3.5,
+          "step": "0.01",
+          "unit": "cm",
+          "ph": "2,0"
+        }
+      ],
+      [
+        "vtivsve",
+        "VTI da via de saída do VE",
+        "num",
+        {
+          "min": 5,
+          "max": 50,
+          "step": "0.1",
+          "unit": "cm",
+          "ph": "20"
+        }
+      ],
+      [
+        "vtiao",
+        "VTI da valva aórtica",
+        "num",
+        {
+          "min": 10,
+          "max": 250,
+          "step": "0.1",
+          "unit": "cm",
+          "ph": "80"
+        }
+      ],
+      [
+        "vmax",
+        "Velocidade máxima aórtica (opcional)",
+        "num",
+        {
+          "min": 0.5,
+          "max": 8,
+          "step": "0.01",
+          "unit": "m/s",
+          "ph": "4,0",
+          "opt": true
+        }
+      ],
+      [
+        "sc",
+        "Superfície corporal (opcional)",
+        "num",
+        {
+          "min": 0.8,
+          "max": 3,
+          "step": "0.01",
+          "unit": "m²",
+          "ph": "1,80",
+          "opt": true
+        }
+      ]
+    ],
+    "formula": "<ul><li><strong>Área da VSVE</strong> = π × (diâmetro ÷ 2)²</li><li><strong>Área valvar aórtica</strong> = área da VSVE × VTI da VSVE ÷ VTI aórtico</li><li><strong>Índice adimensional (DVI)</strong> = VTI da VSVE ÷ VTI aórtico</li><li><strong>Gradiente máximo (Bernoulli simplificado)</strong> = 4 × V²</li></ul>",
+    "table": [
+      [
+        "Estenose aórtica",
+        "AVA (cm²)",
+        "AVA indexada",
+        "Vmáx (m/s)",
+        "DVI"
+      ],
+      [
+        "Leve",
+        "&gt; 1,5",
+        "&gt; 0,85",
+        "2,6 a 2,9",
+        "&gt; 0,50"
+      ],
+      [
+        "Moderada",
+        "1,0 a 1,5",
+        "0,60 a 0,85",
+        "3,0 a 3,9",
+        "0,25 a 0,50"
+      ],
+      [
+        "Importante",
+        "&lt; 1,0",
+        "&lt; 0,6",
+        "≥ 4,0",
+        "&lt; 0,25"
+      ]
+    ],
+    "tips": [
+      "O diâmetro da VSVE é a maior fonte de erro (é elevado ao quadrado): meça em mesossístole, no zoom do paraesternal longo, de borda interna a borda interna, junto ao anel.",
+      "Posicione a amostra do Doppler pulsado na VSVE logo antes da aceleração do fluxo (0,5 a 1 cm do anel) e busque a maior velocidade aórtica em várias janelas (apical, paraesternal direita, supraesternal).",
+      "Discordância entre AVA &lt; 1,0 cm² e gradiente médio &lt; 40 mmHg: verifique erros de medida e avalie baixo fluxo (volume sistólico indexado &lt; 35 mL/m²), eco com dobutamina ou escore de cálcio valvar.",
+      "O DVI não depende do diâmetro da VSVE: é a checagem mais robusta quando a medida da via de saída é duvidosa."
+    ],
+    "sources": [
+      [
+        "Baumgartner H et al. Recommendations on the echocardiographic assessment of aortic valve stenosis (EACVI/ASE). J Am Soc Echocardiogr, 2017.",
+        "https://doi.org/10.1016/j.echo.2017.02.009"
+      ],
+      [
+        "Otto CM et al. 2020 ACC/AHA Guideline for the Management of Patients With Valvular Heart Disease. Circulation, 2021.",
+        "https://doi.org/10.1161/CIR.0000000000000923"
+      ]
+    ],
+    "cases": [
+      [
+        "VSVE 2,0 cm · VTI 20 · VTI aórtico 80 · Vmáx 4,0: AVA 0,79 cm² (importante)",
+        {
+          "dvsve": 2,
+          "vtivsve": 20,
+          "vtiao": 80,
+          "vmax": 4
+        },
+        {
+          "raw": {
+            "ava": 0.785,
+            "dvi": 0.25
+          },
+          "tol": 0.001,
+          "level": "high"
+        }
+      ],
+      [
+        "VSVE 2,2 cm · VTI 22 · VTI aórtico 60: AVA 1,39 cm² (moderada)",
+        {
+          "dvsve": 2.2,
+          "vtivsve": 22,
+          "vtiao": 60
+        },
+        {
+          "raw": {
+            "ava": 1.3938,
+            "dvi": 0.3667
+          },
+          "tol": 0.001,
+          "level": "mid"
+        }
+      ]
+    ],
+    "batch": "cardiologia",
+    "kind": "Calculadora",
+    "config": null,
+    "areaId": "cardiotoracica",
+    "clinicalReview": "pending",
+    "sourceReview": "pending",
+    "sourceFile": "app/content/ferramentas/cardiologia.php",
+    "arithmeticTest": {
+      "status": "passed",
+      "testedAt": "2026-09-25",
+      "total": 2,
+      "passed": 2,
+      "failures": []
+    },
+    "independentArithmeticTest": {
+      "status": "not-tested",
+      "testedAt": null,
+      "total": 0,
+      "passed": 0,
+      "cases": []
+    }
+  },
+  "review": {
+    "status": "needs-review",
+    "reason": "Revisão documental e clínica independente pendente.",
+    "clinicalValidation": "not-performed"
+  },
+  "sourceFile": {
+    "path": "app/content/ferramentas/cardiologia.php",
+    "sha256": "ed536451dd02922a7f840f2c9ce575be004cddb227f60426b7a52cf1b0e94ec0",
+    "bytes": 61303
+  },
+  "clinicalValidation": "not-performed"
+}
