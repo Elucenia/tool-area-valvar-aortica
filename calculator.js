@@ -1,11 +1,11 @@
-/* tool-area-valvar-aortica · Elucenia · https://github.com/Elucenia/tool-area-valvar-aortica
-   Copyright (c) 2026 Elucenia · Felipe Guedes (fgxdev.com). Licensed under the Apache License 2.0: keep this notice and the NOTICE file, and mark your changes.
+/* tool-area-valvar-aortica · ELUCENIA · https://github.com/Elucenia/tool-area-valvar-aortica
+   Copyright (c) 2026 ELUCENIA · Felipe Guedes (fgxdev.com). Licensed under the Apache License 2.0: keep this notice and the NOTICE file, and mark your changes.
    Standalone integration. Package metadata and rights: README.md. */
 (function(root){'use strict';
 function freeze(value){if(value&&typeof value==='object'){for(const item of Object.values(value))freeze(item);Object.freeze(value);}return value;}
 const TOOL=freeze({"id":"area-valvar-aortica","title":"Área valvar aórtica (equação de continuidade)","fields":[["dvsve","Diâmetro da via de saída do VE","num",{"min":1.2,"max":3.5,"step":"0.01","unit":"cm","ph":"2,0"}],["vtivsve","VTI da via de saída do VE","num",{"min":5,"max":50,"step":"0.1","unit":"cm","ph":"20"}],["vtiao","VTI da valva aórtica","num",{"min":10,"max":250,"step":"0.1","unit":"cm","ph":"80"}],["vmax","Velocidade máxima aórtica (opcional)","num",{"min":0.5,"max":8,"step":"0.01","unit":"m/s","ph":"4,0","opt":true}],["sc","Superfície corporal (opcional)","num",{"min":0.8,"max":3,"step":"0.01","unit":"m²","ph":"1,80","opt":true}]],"config":null,"reviewStatus":"needs-review","clinicalValidation":"not-performed"});
 const window={};
-/* Elucenia arithmetic registry. No DOM access, storage, telemetry or network requests. */
+/* ELUCENIA arithmetic registry. No DOM access, storage, telemetry or network requests. */
 (function(root){
   'use strict';
   const CALC={fn:Object.create(null)};
