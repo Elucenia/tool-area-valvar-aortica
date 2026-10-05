@@ -3,12 +3,13 @@
     "id": "area-valvar-aortica",
     "title": "Área valvar aórtica (equação de continuidade)",
     "short": "Estenose aórtica no ecocardiograma",
+    "desc": "Calcule a área valvar aórtica pela equação de continuidade, o índice adimensional (DVI) e o gradiente máximo pela equação de Bernoulli, com a graduação da estenose.",
+    "lead": "Calcula a área valvar aórtica pela equação de continuidade, o índice adimensional e o gradiente máximo, e gradua a estenose aórtica.",
+    "kind": "Calculadora",
     "spec": [
       "cardiologia",
       "cirurgia-cardiovascular"
     ],
-    "desc": "Calcule a área valvar aórtica pela equação de continuidade, o índice adimensional (DVI) e o gradiente máximo pela equação de Bernoulli, com a graduação da estenose.",
-    "lead": "Calcula a área valvar aórtica pela equação de continuidade, o índice adimensional e o gradiente máximo, e gradua a estenose aórtica.",
     "fields": [
       [
         "dvsve",
@@ -74,42 +75,6 @@
       ]
     ],
     "formula": "<ul><li><strong>Área da VSVE</strong> = π × (diâmetro ÷ 2)²</li><li><strong>Área valvar aórtica</strong> = área da VSVE × VTI da VSVE ÷ VTI aórtico</li><li><strong>Índice adimensional (DVI)</strong> = VTI da VSVE ÷ VTI aórtico</li><li><strong>Gradiente máximo (Bernoulli simplificado)</strong> = 4 × V²</li></ul>",
-    "table": [
-      [
-        "Estenose aórtica",
-        "AVA (cm²)",
-        "AVA indexada",
-        "Vmáx (m/s)",
-        "DVI"
-      ],
-      [
-        "Leve",
-        "&gt; 1,5",
-        "&gt; 0,85",
-        "2,6 a 2,9",
-        "&gt; 0,50"
-      ],
-      [
-        "Moderada",
-        "1,0 a 1,5",
-        "0,60 a 0,85",
-        "3,0 a 3,9",
-        "0,25 a 0,50"
-      ],
-      [
-        "Importante",
-        "&lt; 1,0",
-        "&lt; 0,6",
-        "≥ 4,0",
-        "&lt; 0,25"
-      ]
-    ],
-    "tips": [
-      "O diâmetro da VSVE é a maior fonte de erro (é elevado ao quadrado): meça em mesossístole, no zoom do paraesternal longo, de borda interna a borda interna, junto ao anel.",
-      "Posicione a amostra do Doppler pulsado na VSVE logo antes da aceleração do fluxo (0,5 a 1 cm do anel) e busque a maior velocidade aórtica em várias janelas (apical, paraesternal direita, supraesternal).",
-      "Discordância entre AVA &lt; 1,0 cm² e gradiente médio &lt; 40 mmHg: verifique erros de medida e avalie baixo fluxo (volume sistólico indexado &lt; 35 mL/m²), eco com dobutamina ou escore de cálcio valvar.",
-      "O DVI não depende do diâmetro da VSVE: é a checagem mais robusta quando a medida da via de saída é duvidosa."
-    ],
     "sources": [
       [
         "Baumgartner H et al. Recommendations on the echocardiographic assessment of aortic valve stenosis (EACVI/ASE). J Am Soc Echocardiogr, 2017.",
@@ -155,9 +120,6 @@
         }
       ]
     ],
-    "kind": "Calculadora",
-    "config": null,
-    "clinicalReview": "pending",
     "arithmeticTest": {
       "status": "passed",
       "testedAt": "2026-09-25",
@@ -166,17 +128,172 @@
       "failures": []
     },
     "independentArithmeticTest": {
-      "status": "not-tested",
-      "testedAt": null,
-      "total": 0,
-      "passed": 0,
-      "cases": []
+      "status": "passed",
+      "testedAt": "2026-10-03T17:15:29.797Z",
+      "total": 2,
+      "passed": 2,
+      "evidencePath": "reports/review-20261003/native-additional-independent-oracles.json",
+      "scope": "Additional independent arithmetic checks for14 previously unchecked native tools. Formula indication and clinical outcomes are outside these numerical checks.",
+      "publicCandidateBankOmitted": true
+    },
+    "methodVersion": "EACVI/ASE 2017:continuidade por VTI; DVI; Bernoulli simplificado 4 v²",
+    "implementationVersion": "area-valvar-aortica@native-2026-10-03+e07ead31e417",
+    "currentMethodSource": "https://pubmed.ncbi.nlm.nih.gov/28385280/",
+    "versionEvidence": {
+      "status": "variant-and-source-edition-recorded",
+      "checkedAt": "2026-10-03",
+      "implementedVariant": "Área da VSVE = π × (diâmetro ÷ 2)² Área valvar aórtica = área da VSVE × VTI da VSVE ÷ VTI aórtico Índice adimensional (DVI) = VTI da VSVE ÷ VTI aórtico Gradiente máximo (Bernoulli simplificado) = 4 × V²",
+      "inputContract": {
+        "fields": [
+          {
+            "key": "dvsve",
+            "label": "Diâmetro da via de saída do VE",
+            "type": "num",
+            "min": 1.2,
+            "max": 3.5,
+            "unit": "cm",
+            "optional": false,
+            "options": null
+          },
+          {
+            "key": "vtivsve",
+            "label": "VTI da via de saída do VE",
+            "type": "num",
+            "min": 5,
+            "max": 50,
+            "unit": "cm",
+            "optional": false,
+            "options": null
+          },
+          {
+            "key": "vtiao",
+            "label": "VTI da valva aórtica",
+            "type": "num",
+            "min": 10,
+            "max": 250,
+            "unit": "cm",
+            "optional": false,
+            "options": null
+          },
+          {
+            "key": "vmax",
+            "label": "Velocidade máxima aórtica (opcional)",
+            "type": "num",
+            "min": 0.5,
+            "max": 8,
+            "unit": "m/s",
+            "optional": true,
+            "options": null
+          },
+          {
+            "key": "sc",
+            "label": "Superfície corporal (opcional)",
+            "type": "num",
+            "min": 0.8,
+            "max": 3,
+            "unit": "m²",
+            "optional": true,
+            "options": null
+          }
+        ],
+        "hash": "1edec48843f67e6db2d39e340f56adee58c16c1415a6cc6306e56122e0313a22"
+      },
+      "sourceEditions": [
+        {
+          "citation": "Baumgartner H et al. Recommendations on the echocardiographic assessment of aortic valve stenosis (EACVI/ASE). J Am Soc Echocardiogr, 2017.",
+          "url": "https://doi.org/10.1016/j.echo.2017.02.009",
+          "class": "primary-publication-abstract-or-metadata-read",
+          "publicationEditionConfirmed": true,
+          "fullTextRetrieved": false,
+          "formulaConformance": "not-assessed",
+          "publication": {
+            "title": "Recommendations on the Echocardiographic Assessment of Aortic Valve Stenosis: A Focused Update from the European Association of Cardiovascular Imaging and the American Society of Echocardiography.",
+            "year": "2017",
+            "firstPublicationDate": "2017-04-01",
+            "doi": "10.1016/j.echo.2017.02.009",
+            "pmid": "28385280",
+            "journal": "Journal of the American Society of Echocardiography : official publication of the American Society of Echocardiography",
+            "authors": "Baumgartner H, Hung J, Bermejo J, Chambers JB, Edvardsen T, Goldstein S, Lancellotti P, LeFevre M, Miller F, Otto CM."
+          },
+          "primaryPublicationUrl": "https://pubmed.ncbi.nlm.nih.gov/28385280/",
+          "abstractAvailable": true,
+          "fullTextSha256": null,
+          "abstractSha256": "cf0006ff36bacdd6baae4c8ba5cd8a57b94a77c5ac93bafce62e7af289f31c12",
+          "matchedBy": "exact-DOI-or-PMID"
+        },
+        {
+          "citation": "Otto CM et al. 2020 ACC/AHA Guideline for the Management of Patients With Valvular Heart Disease. Circulation, 2021.",
+          "url": "https://doi.org/10.1161/CIR.0000000000000923",
+          "class": "primary-publication-abstract-or-metadata-read",
+          "publicationEditionConfirmed": true,
+          "fullTextRetrieved": false,
+          "formulaConformance": "not-assessed",
+          "publication": {
+            "title": "2020 ACC/AHA Guideline for the Management of Patients With Valvular Heart Disease: A Report of the American College of Cardiology/American Heart Association Joint Committee on Clinical Practice Guidelines.",
+            "year": "2021",
+            "firstPublicationDate": "2020-12-17",
+            "doi": "10.1161/cir.0000000000000923",
+            "pmid": "33332150",
+            "journal": "Circulation",
+            "authors": "Otto CM, Nishimura RA, Bonow RO, Carabello BA, Erwin JP, Gentile F, Jneid H, Krieger EV, Mack M, McLeod C, O'Gara PT, Rigolin VH, Sundt TM, Thompson A, Toly C."
+          },
+          "primaryPublicationUrl": "https://pubmed.ncbi.nlm.nih.gov/33332150/",
+          "abstractAvailable": false,
+          "fullTextSha256": null,
+          "abstractSha256": null,
+          "matchedBy": "exact-DOI-or-PMID"
+        }
+      ],
+      "publicationEditionConfirmed": true,
+      "fullFormulaConformanceReviewed": false,
+      "formulaConformance": "Not established by bibliographic identity or automatic full-text retrieval; retain independent arithmetic and clinical review as separate evidence.",
+      "independentArithmetic": {
+        "status": "passed",
+        "testedAt": "2026-10-03T17:15:29.797Z",
+        "total": 2,
+        "passed": 2,
+        "evidencePath": "reports/review-20261003/native-additional-independent-oracles.json",
+        "scope": "Additional independent arithmetic checks for14 previously unchecked native tools. Formula indication and clinical outcomes are outside these numerical checks.",
+        "caseEvidence": {
+          "schema": "independentArithmeticTest.cases",
+          "recordedEvidenceSha256": "86def3e7ebeaac71381114fa2f7faee7322690b2846a267cf762d3941e0ec32f",
+          "meaning": "Reference to the already recorded per-tool evidence; no new test or approval is created by this synchronization."
+        }
+      },
+      "clinicalApproval": "not-performed",
+      "translationApproval": "not-performed",
+      "releaseApproval": "not-performed",
+      "implementationHash": "e07ead31e4179e43a38ea114002385ad012ccbf24fa028597dd6810c1bb669f8"
+    },
+    "limits": "A avaliação da estenose aórtica nas recomendações EACVI/ASE 2017 é integrada: gradiente, fluxo, fração de ejeção e qualidade da avaliação da via de saída ventricular devem ser considerados juntos. Situações de baixo fluxo ou baixo gradiente exigem a avaliação específica prevista no documento. Os valores calculados isoladamente não reproduzem esse algoritmo completo.",
+    "sourceLimitEvidence": {
+      "checkedAt": "2026-10-04T02:52:02.731Z",
+      "scope": "Targeted source reading and authorial documentation, not full method or clinical approval.",
+      "sourceReviewFile": "remaining-native-population-limits-review.json",
+      "sourceReviewSha256": "ba61a9b120a338c518c34ba9f324558b12580e7f5371ea81304b030b45ea44a5",
+      "readingOutcome": "review-outcome-recorded",
+      "unresolved": [
+        "Resumo não traz técnica de VTI/diâmetro, unidades, limites de gravidade, indexação ou tratamento de medidas discordantes. Não comprova a classificação local por fórmula isolada."
+      ],
+      "fullMethodConformanceReviewed": false,
+      "clinicalApproval": "not-performed",
+      "professionalLanguageApproval": "not-performed"
     }
   },
-  "review": {
-    "status": "needs-review",
-    "reason": "Revisão documental e clínica independente pendente.",
-    "clinicalValidation": "not-performed"
+  "currentSource": {
+    "file": "apps/website/private/tool-code/area-valvar-aortica/calculator.js",
+    "bytes": 5567,
+    "sha256": "e07ead31e4179e43a38ea114002385ad012ccbf24fa028597dd6810c1bb669f8"
   },
-  "clinicalValidation": "not-performed"
+  "sourceToolSha256": "64797503a7d2bae25745ed48e5b9f46d3b965c2d5fe9799f1e97c556ff4ce411",
+  "omittedFullReferenceBanks": [
+    {
+      "rows": 2,
+      "sha256": "14e99e07484233032b91bfebb85636a24348a0b6862086eb9f2e44d44e060e11",
+      "reason": "Large independent reference bank not bundled; exact evidence scope and file references retained"
+    }
+  ],
+  "clinicalApproval": "not-performed",
+  "professionalLanguageApproval": "not-performed",
+  "sourceRightsApproval": "not-performed"
 }

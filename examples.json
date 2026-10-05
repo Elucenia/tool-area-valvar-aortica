@@ -1,6 +1,15 @@
 [
   {
-    "label": "VSVE 2,0 cm · VTI 20 · VTI aórtico 80 · Vmáx 4,0: AVA 0,79 cm² (importante)",
+    "id": "area-valvar-aortica",
+    "kind": "native-source-reference",
+    "index": 0,
+    "name": "VSVE 2,0 cm · VTI 20 · VTI aórtico 80 · Vmáx 4,0: AVA 0,79 cm² (importante)",
+    "originalInput": {
+      "dvsve": 2,
+      "vtivsve": 20,
+      "vtiao": 80,
+      "vmax": 4
+    },
     "input": {
       "dvsve": 2,
       "vtivsve": 20,
@@ -15,16 +24,37 @@
       "tol": 0.001,
       "level": "high"
     },
-    "originalInput": {
-      "dvsve": 2,
-      "vtivsve": 20,
-      "vtiao": 80,
-      "vmax": 4
+    "recordedResult": {
+      "main": [
+        "0,79",
+        "cm²"
+      ],
+      "label": "Área valvar aórtica",
+      "raw": {
+        "ava": 0.7853981633974483,
+        "dvi": 0.25,
+        "lvot": 3.141592653589793
+      }
     },
-    "expandedZeroOptions": []
+    "provenance": {
+      "bank": {
+        "file": "reports/review-20261003/source-cases-audit.json",
+        "bytes": 885399,
+        "sha256": "1e609b8c90f6b7fef933d748f3ebd59836d4d06fe7b7e07ced569756091408d3"
+      },
+      "scope": "Existing recorded synthetic source expectations and source-audit transport baseline; no new independent oracle"
+    }
   },
   {
-    "label": "VSVE 2,2 cm · VTI 22 · VTI aórtico 60: AVA 1,39 cm² (moderada)",
+    "id": "area-valvar-aortica",
+    "kind": "native-source-reference",
+    "index": 1,
+    "name": "VSVE 2,2 cm · VTI 22 · VTI aórtico 60: AVA 1,39 cm² (moderada)",
+    "originalInput": {
+      "dvsve": 2.2,
+      "vtivsve": 22,
+      "vtiao": 60
+    },
     "input": {
       "dvsve": 2.2,
       "vtivsve": 22,
@@ -38,11 +68,25 @@
       "tol": 0.001,
       "level": "mid"
     },
-    "originalInput": {
-      "dvsve": 2.2,
-      "vtivsve": 22,
-      "vtiao": 60
+    "recordedResult": {
+      "main": [
+        "1,39",
+        "cm²"
+      ],
+      "label": "Área valvar aórtica",
+      "raw": {
+        "ava": 1.393819940642672,
+        "dvi": 0.36666666666666664,
+        "lvot": 3.8013271108436504
+      }
     },
-    "expandedZeroOptions": []
+    "provenance": {
+      "bank": {
+        "file": "reports/review-20261003/source-cases-audit.json",
+        "bytes": 885399,
+        "sha256": "1e609b8c90f6b7fef933d748f3ebd59836d4d06fe7b7e07ced569756091408d3"
+      },
+      "scope": "Existing recorded synthetic source expectations and source-audit transport baseline; no new independent oracle"
+    }
   }
 ]

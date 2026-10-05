@@ -1,0 +1,241 @@
+{
+  "id": "area-valvar-aortica",
+  "at": "2026-10-05T17:29:04.861Z",
+  "adapter": {
+    "file": "apps/website/private/tool-code/area-valvar-aortica/calculator.js",
+    "bytes": 5567,
+    "sha256": "e07ead31e4179e43a38ea114002385ad012ccbf24fa028597dd6810c1bb669f8"
+  },
+  "cases": [
+    {
+      "name": "VSVE 2,0 cm · VTI 20 · VTI aórtico 80 · Vmáx 4,0: AVA 0,79 cm² (importante)",
+      "input": {
+        "dvsve": 2,
+        "vtivsve": 20,
+        "vtiao": 80,
+        "vmax": 4
+      },
+      "obtained": {
+        "id": "area-valvar-aortica",
+        "main": [
+          "0,79",
+          "cm²"
+        ],
+        "label": "Área valvar aórtica",
+        "raw": {
+          "ava": 0.7853981633974483,
+          "dvi": 0.25,
+          "lvot": 3.141592653589793
+        },
+        "clinicalValidation": "not-performed"
+      },
+      "checks": [
+        {
+          "at": "status",
+          "expected": 200,
+          "obtained": 200,
+          "passed": true
+        },
+        {
+          "at": "result-object",
+          "expected": true,
+          "obtained": true,
+          "passed": true
+        },
+        {
+          "at": "result.raw.ava",
+          "expected": 0.785,
+          "obtained": 0.7853981633974483,
+          "tolerance": 0.001,
+          "difference": 0.0003981633974482479,
+          "scope": "Recorded rounded source reference",
+          "passed": true
+        },
+        {
+          "at": "result.raw.dvi",
+          "expected": 0.25,
+          "obtained": 0.25,
+          "tolerance": 0.001,
+          "difference": 0,
+          "scope": "Recorded rounded source reference",
+          "passed": true
+        },
+        {
+          "at": "regression.result.raw.ava",
+          "expected": 0.7853981633974483,
+          "obtained": 0.7853981633974483,
+          "tolerance": 1e-10,
+          "difference": 0,
+          "scope": "Existing precise source-audit transport regression, not independent formula validation",
+          "passed": true
+        },
+        {
+          "at": "regression.result.raw.dvi",
+          "expected": 0.25,
+          "obtained": 0.25,
+          "tolerance": 1e-10,
+          "difference": 0,
+          "scope": "Existing precise source-audit transport regression, not independent formula validation",
+          "passed": true
+        },
+        {
+          "at": "regression.result.raw.lvot",
+          "expected": 3.141592653589793,
+          "obtained": 3.141592653589793,
+          "tolerance": 1e-10,
+          "difference": 0,
+          "scope": "Existing precise source-audit transport regression, not independent formula validation",
+          "passed": true
+        },
+        {
+          "at": "regression.result.main.length",
+          "expected": 2,
+          "obtained": 2,
+          "scope": "Existing source-audit public representation regression",
+          "passed": true
+        },
+        {
+          "at": "regression.result.main[0]",
+          "expected": "0,79",
+          "obtained": "0,79",
+          "scope": "Existing source-audit public representation regression",
+          "passed": true
+        },
+        {
+          "at": "regression.result.main[1]",
+          "expected": "cm²",
+          "obtained": "cm²",
+          "scope": "Existing source-audit public representation regression",
+          "passed": true
+        }
+      ],
+      "notCompared": [
+        {
+          "key": "level",
+          "reason": "Historical interpretative/explanatory expectation outside the bounded API and outside clinical approval"
+        }
+      ],
+      "status": "passed"
+    },
+    {
+      "name": "VSVE 2,2 cm · VTI 22 · VTI aórtico 60: AVA 1,39 cm² (moderada)",
+      "input": {
+        "dvsve": 2.2,
+        "vtivsve": 22,
+        "vtiao": 60
+      },
+      "obtained": {
+        "id": "area-valvar-aortica",
+        "main": [
+          "1,39",
+          "cm²"
+        ],
+        "label": "Área valvar aórtica",
+        "raw": {
+          "ava": 1.393819940642672,
+          "dvi": 0.36666666666666664,
+          "lvot": 3.8013271108436504
+        },
+        "clinicalValidation": "not-performed"
+      },
+      "checks": [
+        {
+          "at": "status",
+          "expected": 200,
+          "obtained": 200,
+          "passed": true
+        },
+        {
+          "at": "result-object",
+          "expected": true,
+          "obtained": true,
+          "passed": true
+        },
+        {
+          "at": "result.raw.ava",
+          "expected": 1.3938,
+          "obtained": 1.393819940642672,
+          "tolerance": 0.001,
+          "difference": 0.000019940642671967268,
+          "scope": "Recorded rounded source reference",
+          "passed": true
+        },
+        {
+          "at": "result.raw.dvi",
+          "expected": 0.3667,
+          "obtained": 0.36666666666666664,
+          "tolerance": 0.001,
+          "difference": 0.00003333333333338517,
+          "scope": "Recorded rounded source reference",
+          "passed": true
+        },
+        {
+          "at": "regression.result.raw.ava",
+          "expected": 1.393819940642672,
+          "obtained": 1.393819940642672,
+          "tolerance": 1e-10,
+          "difference": 0,
+          "scope": "Existing precise source-audit transport regression, not independent formula validation",
+          "passed": true
+        },
+        {
+          "at": "regression.result.raw.dvi",
+          "expected": 0.36666666666666664,
+          "obtained": 0.36666666666666664,
+          "tolerance": 1e-10,
+          "difference": 0,
+          "scope": "Existing precise source-audit transport regression, not independent formula validation",
+          "passed": true
+        },
+        {
+          "at": "regression.result.raw.lvot",
+          "expected": 3.8013271108436504,
+          "obtained": 3.8013271108436504,
+          "tolerance": 1e-10,
+          "difference": 0,
+          "scope": "Existing precise source-audit transport regression, not independent formula validation",
+          "passed": true
+        },
+        {
+          "at": "regression.result.main.length",
+          "expected": 2,
+          "obtained": 2,
+          "scope": "Existing source-audit public representation regression",
+          "passed": true
+        },
+        {
+          "at": "regression.result.main[0]",
+          "expected": "1,39",
+          "obtained": "1,39",
+          "scope": "Existing source-audit public representation regression",
+          "passed": true
+        },
+        {
+          "at": "regression.result.main[1]",
+          "expected": "cm²",
+          "obtained": "cm²",
+          "scope": "Existing source-audit public representation regression",
+          "passed": true
+        }
+      ],
+      "notCompared": [
+        {
+          "key": "level",
+          "reason": "Historical interpretative/explanatory expectation outside the bounded API and outside clinical approval"
+        }
+      ],
+      "status": "passed"
+    }
+  ],
+  "refusals": {
+    "passed": 50,
+    "failed": 0,
+    "failures": []
+  },
+  "sourceNodeBrowserVmParity": true,
+  "actualBrowserDomVerified": false,
+  "newIndependentOracle": false,
+  "currentActualR6HttpEvidence": "pending",
+  "clinicalApproval": false,
+  "professionalLanguageApproval": false
+}

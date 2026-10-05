@@ -1,0 +1,687 @@
+[
+  {
+    "name": "Reject null input",
+    "input": null,
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": null
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject array input",
+    "input": [],
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": null
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject string input",
+    "input": "invalid",
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": null
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject numeric input",
+    "input": 1,
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": null
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject missing required field dvsve",
+    "input": {
+      "vtivsve": 20,
+      "vtiao": 80,
+      "vmax": 4
+    },
+    "expected": {
+      "code": "REQUIRED_FIELD",
+      "field": "dvsve"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject empty required field dvsve",
+    "input": {
+      "dvsve": "",
+      "vtivsve": 20,
+      "vtiao": 80,
+      "vmax": 4
+    },
+    "expected": {
+      "code": "REQUIRED_FIELD",
+      "field": "dvsve"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric \"NaN\" dvsve",
+    "input": {
+      "dvsve": "NaN",
+      "vtivsve": 20,
+      "vtiao": 80,
+      "vmax": 4
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "dvsve"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric \"Infinity\" dvsve",
+    "input": {
+      "dvsve": "Infinity",
+      "vtivsve": 20,
+      "vtiao": 80,
+      "vmax": 4
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "dvsve"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric \"1e309\" dvsve",
+    "input": {
+      "dvsve": "1e309",
+      "vtivsve": 20,
+      "vtiao": 80,
+      "vmax": 4
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "dvsve"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric \"invalid\" dvsve",
+    "input": {
+      "dvsve": "invalid",
+      "vtivsve": 20,
+      "vtiao": 80,
+      "vmax": 4
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "dvsve"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric {} dvsve",
+    "input": {
+      "dvsve": {},
+      "vtivsve": 20,
+      "vtiao": 80,
+      "vmax": 4
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "dvsve"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric true dvsve",
+    "input": {
+      "dvsve": true,
+      "vtivsve": 20,
+      "vtiao": 80,
+      "vmax": 4
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "dvsve"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject below documented minimum dvsve",
+    "input": {
+      "dvsve": 0.19999999999999996,
+      "vtivsve": 20,
+      "vtiao": 80,
+      "vmax": 4
+    },
+    "expected": {
+      "code": "OUT_OF_RANGE",
+      "field": "dvsve"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject above documented maximum dvsve",
+    "input": {
+      "dvsve": 4.5,
+      "vtivsve": 20,
+      "vtiao": 80,
+      "vmax": 4
+    },
+    "expected": {
+      "code": "OUT_OF_RANGE",
+      "field": "dvsve"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject missing required field vtivsve",
+    "input": {
+      "dvsve": 2,
+      "vtiao": 80,
+      "vmax": 4
+    },
+    "expected": {
+      "code": "REQUIRED_FIELD",
+      "field": "vtivsve"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject empty required field vtivsve",
+    "input": {
+      "dvsve": 2,
+      "vtivsve": "",
+      "vtiao": 80,
+      "vmax": 4
+    },
+    "expected": {
+      "code": "REQUIRED_FIELD",
+      "field": "vtivsve"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric \"NaN\" vtivsve",
+    "input": {
+      "dvsve": 2,
+      "vtivsve": "NaN",
+      "vtiao": 80,
+      "vmax": 4
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "vtivsve"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric \"Infinity\" vtivsve",
+    "input": {
+      "dvsve": 2,
+      "vtivsve": "Infinity",
+      "vtiao": 80,
+      "vmax": 4
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "vtivsve"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric \"1e309\" vtivsve",
+    "input": {
+      "dvsve": 2,
+      "vtivsve": "1e309",
+      "vtiao": 80,
+      "vmax": 4
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "vtivsve"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric \"invalid\" vtivsve",
+    "input": {
+      "dvsve": 2,
+      "vtivsve": "invalid",
+      "vtiao": 80,
+      "vmax": 4
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "vtivsve"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric {} vtivsve",
+    "input": {
+      "dvsve": 2,
+      "vtivsve": {},
+      "vtiao": 80,
+      "vmax": 4
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "vtivsve"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric true vtivsve",
+    "input": {
+      "dvsve": 2,
+      "vtivsve": true,
+      "vtiao": 80,
+      "vmax": 4
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "vtivsve"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject below documented minimum vtivsve",
+    "input": {
+      "dvsve": 2,
+      "vtivsve": 4,
+      "vtiao": 80,
+      "vmax": 4
+    },
+    "expected": {
+      "code": "OUT_OF_RANGE",
+      "field": "vtivsve"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject above documented maximum vtivsve",
+    "input": {
+      "dvsve": 2,
+      "vtivsve": 55,
+      "vtiao": 80,
+      "vmax": 4
+    },
+    "expected": {
+      "code": "OUT_OF_RANGE",
+      "field": "vtivsve"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject missing required field vtiao",
+    "input": {
+      "dvsve": 2,
+      "vtivsve": 20,
+      "vmax": 4
+    },
+    "expected": {
+      "code": "REQUIRED_FIELD",
+      "field": "vtiao"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject empty required field vtiao",
+    "input": {
+      "dvsve": 2,
+      "vtivsve": 20,
+      "vtiao": "",
+      "vmax": 4
+    },
+    "expected": {
+      "code": "REQUIRED_FIELD",
+      "field": "vtiao"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric \"NaN\" vtiao",
+    "input": {
+      "dvsve": 2,
+      "vtivsve": 20,
+      "vtiao": "NaN",
+      "vmax": 4
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "vtiao"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric \"Infinity\" vtiao",
+    "input": {
+      "dvsve": 2,
+      "vtivsve": 20,
+      "vtiao": "Infinity",
+      "vmax": 4
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "vtiao"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric \"1e309\" vtiao",
+    "input": {
+      "dvsve": 2,
+      "vtivsve": 20,
+      "vtiao": "1e309",
+      "vmax": 4
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "vtiao"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric \"invalid\" vtiao",
+    "input": {
+      "dvsve": 2,
+      "vtivsve": 20,
+      "vtiao": "invalid",
+      "vmax": 4
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "vtiao"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric {} vtiao",
+    "input": {
+      "dvsve": 2,
+      "vtivsve": 20,
+      "vtiao": {},
+      "vmax": 4
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "vtiao"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric true vtiao",
+    "input": {
+      "dvsve": 2,
+      "vtivsve": 20,
+      "vtiao": true,
+      "vmax": 4
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "vtiao"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject below documented minimum vtiao",
+    "input": {
+      "dvsve": 2,
+      "vtivsve": 20,
+      "vtiao": 9,
+      "vmax": 4
+    },
+    "expected": {
+      "code": "OUT_OF_RANGE",
+      "field": "vtiao"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject above documented maximum vtiao",
+    "input": {
+      "dvsve": 2,
+      "vtivsve": 20,
+      "vtiao": 275,
+      "vmax": 4
+    },
+    "expected": {
+      "code": "OUT_OF_RANGE",
+      "field": "vtiao"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric \"NaN\" vmax",
+    "input": {
+      "dvsve": 2,
+      "vtivsve": 20,
+      "vtiao": 80,
+      "vmax": "NaN"
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "vmax"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric \"Infinity\" vmax",
+    "input": {
+      "dvsve": 2,
+      "vtivsve": 20,
+      "vtiao": 80,
+      "vmax": "Infinity"
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "vmax"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric \"1e309\" vmax",
+    "input": {
+      "dvsve": 2,
+      "vtivsve": 20,
+      "vtiao": 80,
+      "vmax": "1e309"
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "vmax"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric \"invalid\" vmax",
+    "input": {
+      "dvsve": 2,
+      "vtivsve": 20,
+      "vtiao": 80,
+      "vmax": "invalid"
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "vmax"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric {} vmax",
+    "input": {
+      "dvsve": 2,
+      "vtivsve": 20,
+      "vtiao": 80,
+      "vmax": {}
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "vmax"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric true vmax",
+    "input": {
+      "dvsve": 2,
+      "vtivsve": 20,
+      "vtiao": 80,
+      "vmax": true
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "vmax"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject below documented minimum vmax",
+    "input": {
+      "dvsve": 2,
+      "vtivsve": 20,
+      "vtiao": 80,
+      "vmax": -0.5
+    },
+    "expected": {
+      "code": "OUT_OF_RANGE",
+      "field": "vmax"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject above documented maximum vmax",
+    "input": {
+      "dvsve": 2,
+      "vtivsve": 20,
+      "vtiao": 80,
+      "vmax": 9
+    },
+    "expected": {
+      "code": "OUT_OF_RANGE",
+      "field": "vmax"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric \"NaN\" sc",
+    "input": {
+      "dvsve": 2,
+      "vtivsve": 20,
+      "vtiao": 80,
+      "vmax": 4,
+      "sc": "NaN"
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "sc"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric \"Infinity\" sc",
+    "input": {
+      "dvsve": 2,
+      "vtivsve": 20,
+      "vtiao": 80,
+      "vmax": 4,
+      "sc": "Infinity"
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "sc"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric \"1e309\" sc",
+    "input": {
+      "dvsve": 2,
+      "vtivsve": 20,
+      "vtiao": 80,
+      "vmax": 4,
+      "sc": "1e309"
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "sc"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric \"invalid\" sc",
+    "input": {
+      "dvsve": 2,
+      "vtivsve": 20,
+      "vtiao": 80,
+      "vmax": 4,
+      "sc": "invalid"
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "sc"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric {} sc",
+    "input": {
+      "dvsve": 2,
+      "vtivsve": 20,
+      "vtiao": 80,
+      "vmax": 4,
+      "sc": {}
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "sc"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric true sc",
+    "input": {
+      "dvsve": 2,
+      "vtivsve": 20,
+      "vtiao": 80,
+      "vmax": 4,
+      "sc": true
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "sc"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject below documented minimum sc",
+    "input": {
+      "dvsve": 2,
+      "vtivsve": 20,
+      "vtiao": 80,
+      "vmax": 4,
+      "sc": -0.19999999999999996
+    },
+    "expected": {
+      "code": "OUT_OF_RANGE",
+      "field": "sc"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject above documented maximum sc",
+    "input": {
+      "dvsve": 2,
+      "vtivsve": 20,
+      "vtiao": 80,
+      "vmax": 4,
+      "sc": 4
+    },
+    "expected": {
+      "code": "OUT_OF_RANGE",
+      "field": "sc"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  }
+]
