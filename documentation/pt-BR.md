@@ -89,3 +89,28 @@ Resultado da fórmula ou classificação. Interpretação, conduta e aplicabilid
 Apache-2.0 aplica-se somente ao código da ELUCENIA. Os instrumentos, publicações, traduções e dados mantêm os direitos dos respectivos titulares. Preserve LICENSE e NOTICE.
 
 ELUCENIA · Felipe Guedes · Copyright © 2026
+
+## Resultados documentados
+
+As informações abaixo preservam as saídas do método para exemplos sintéticos. Não constituem validação clínica independente.
+
+### 1
+
+Estenose aórtica importante pela área
+
+| Detalhes do resultado | |
+| --- | --- |
+| Área da VSVE | 3,14 cm² |
+| Índice adimensional (DVI) | 0,25 |
+| Gradiente máximo (4V²) | 64 mmHg |
+
+
+### 2
+
+Estenose aórtica moderada pela área
+
+| Detalhes do resultado | |
+| --- | --- |
+| Área da VSVE | 3,80 cm² |
+| Índice adimensional (DVI) | 0,37 |
+

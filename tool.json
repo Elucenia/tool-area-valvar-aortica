@@ -137,7 +137,7 @@
       "publicCandidateBankOmitted": true
     },
     "methodVersion": "EACVI/ASE 2017:continuidade por VTI; DVI; Bernoulli simplificado 4 v²",
-    "implementationVersion": "area-valvar-aortica@native-2026-10-03+e07ead31e417",
+    "implementationVersion": "area-valvar-aortica@native-2026-10-05+2d86aa688cc6",
     "currentMethodSource": "https://pubmed.ncbi.nlm.nih.gov/28385280/",
     "versionEvidence": {
       "status": "variant-and-source-edition-recorded",
@@ -263,7 +263,35 @@
       "clinicalApproval": "not-performed",
       "translationApproval": "not-performed",
       "releaseApproval": "not-performed",
-      "implementationHash": "e07ead31e4179e43a38ea114002385ad012ccbf24fa028597dd6810c1bb669f8"
+      "implementationHash": "2d86aa688cc69b1c9215e0f24b005a0d5ac6bcab5188b0b9aed9de547ed9f387",
+      "documentedOutputContract": {
+        "fields": [
+          "level",
+          "verdict",
+          "rows",
+          "note"
+        ],
+        "scope": "Optional documented outputs already produced by the existing scientific method; no new classification or treatment decision.",
+        "sourceExposureReceipt": {
+          "file": "reports/review-20261005-completion/native-result-presentation-r1/applied-output-r1/receipt.json",
+          "sha256": "ad5471530e501b906b966463cef1eb20e9745ac745fc30fb85d3ec4db2a333c3"
+        },
+        "scientificBodiesUnchanged": true,
+        "clinicalApproval": "not-performed",
+        "professionalLanguageApproval": "not-performed"
+      },
+      "technicalBindingHistory": [
+        {
+          "recordedAt": "2026-10-05T23:55:42.176Z",
+          "scope": "Expose existing documented result fields; scientific body and complete input contract unchanged.",
+          "previousImplementationVersion": "area-valvar-aortica@native-2026-10-03+e07ead31e417",
+          "previousImplementationHash": "e07ead31e4179e43a38ea114002385ad012ccbf24fa028597dd6810c1bb669f8",
+          "implementationHash": "2d86aa688cc69b1c9215e0f24b005a0d5ac6bcab5188b0b9aed9de547ed9f387",
+          "scientificBodySha256": "c69dae8b4297e3ede8a7d383e40396befcae8ca730a25bcaa60316cd2d45a892",
+          "metadataContractHash": "1edec48843f67e6db2d39e340f56adee58c16c1415a6cc6306e56122e0313a22",
+          "exposureReceiptSha256": "ad5471530e501b906b966463cef1eb20e9745ac745fc30fb85d3ec4db2a333c3"
+        }
+      ]
     },
     "limits": "A avaliação da estenose aórtica nas recomendações EACVI/ASE 2017 é integrada: gradiente, fluxo, fração de ejeção e qualidade da avaliação da via de saída ventricular devem ser considerados juntos. Situações de baixo fluxo ou baixo gradiente exigem a avaliação específica prevista no documento. Os valores calculados isoladamente não reproduzem esse algoritmo completo.",
     "sourceLimitEvidence": {
@@ -282,15 +310,15 @@
   },
   "currentSource": {
     "file": "apps/website/private/tool-code/area-valvar-aortica/calculator.js",
-    "bytes": 5567,
-    "sha256": "e07ead31e4179e43a38ea114002385ad012ccbf24fa028597dd6810c1bb669f8"
+    "bytes": 5772,
+    "sha256": "2d86aa688cc69b1c9215e0f24b005a0d5ac6bcab5188b0b9aed9de547ed9f387"
   },
-  "sourceToolSha256": "64797503a7d2bae25745ed48e5b9f46d3b965c2d5fe9799f1e97c556ff4ce411",
+  "sourceToolSha256": "f796bc2b46f6433a952542f63d4eb6f523c8fddd05e0a391b3fd0a259b5cfdd4",
   "omittedFullReferenceBanks": [
     {
       "rows": 2,
       "sha256": "14e99e07484233032b91bfebb85636a24348a0b6862086eb9f2e44d44e060e11",
-      "reason": "Large independent reference bank not bundled; exact evidence scope and file references retained"
+      "reason": "Large independent reference bank not bundled; historical proof scope retained"
     }
   ],
   "clinicalApproval": "not-performed",

@@ -1,6 +1,6 @@
 {
   "id": "area-valvar-aortica",
-  "scope": "Exclusive report-owned R6-HTTP-linked candidate, read-only default test",
+  "scope": "Immutable package integrity; tests write no files",
   "files": [
     {
       "path": ".gitattributes",
@@ -24,8 +24,8 @@
     },
     {
       "path": "calculator.browser.js",
-      "bytes": 5567,
-      "sha256": "e07ead31e4179e43a38ea114002385ad012ccbf24fa028597dd6810c1bb669f8"
+      "bytes": 5772,
+      "sha256": "2d86aa688cc69b1c9215e0f24b005a0d5ac6bcab5188b0b9aed9de547ed9f387"
     },
     {
       "path": "calculator.js",
@@ -39,8 +39,8 @@
     },
     {
       "path": "CODE-COMPONENTS.md",
-      "bytes": 1103,
-      "sha256": "e1a964b22fa826433209f3a5baf23c52ec90288aaf41c288eebe63fc6099c1ab"
+      "bytes": 1372,
+      "sha256": "fd0ba86d71611d355f54eae532d8683e2e16551d0d288b3bda03db72760af500"
     },
     {
       "path": "CONTRIBUTING.md",
@@ -49,68 +49,78 @@
     },
     {
       "path": "demo-runtime.js",
-      "bytes": 11656,
-      "sha256": "734da1ceff19b961423e1bb5d2c9eaafd18920b32cc4f331856f6065c9cfd2c9"
+      "bytes": 14286,
+      "sha256": "187cb0a3f2693707660f7fc69fc63ce5e30055a5ccdc621cc7945a0d3b1d2918"
     },
     {
       "path": "documentation/ar.md",
-      "bytes": 4371,
-      "sha256": "52c21e32998db28e3e3ba9fc6bf99b2ab4801abd6459a8cd42a3b133f86fe022"
+      "bytes": 5091,
+      "sha256": "27df0d305b6539678e329e576a2b0e3c222cad195a908ffb9b43eda12ec5e66b"
     },
     {
       "path": "documentation/de.md",
-      "bytes": 3632,
-      "sha256": "b1f7a38d9d8fabf8a33e83cdf823fc15ecebfeae69d015585b9e29ee9f40d5ff"
+      "bytes": 4148,
+      "sha256": "244bbcc904f3acfa5626c1fa5ea701c4d65b92bc7a65074fe47360891cd96faf"
     },
     {
       "path": "documentation/en.md",
-      "bytes": 3143,
-      "sha256": "1a3901438f03ae349dc3c0b57fc3d80416e3c4955c17174714b7a4ef94c422cb"
+      "bytes": 3621,
+      "sha256": "dec1253ab8085c69e152a984b526b49d00c07db82b0b2405bb5a0e4eba161696"
     },
     {
       "path": "documentation/es.md",
-      "bytes": 3579,
-      "sha256": "800ec344fa0d0e4566206f67812d8d7e6c9d23c75558878275b41aaec5141492"
+      "bytes": 4109,
+      "sha256": "a56d1786309b74434a1568b1f593ed19e6a27e31b507b46b56b1e5d8fb49f04a"
     },
     {
       "path": "documentation/fr.md",
-      "bytes": 3771,
-      "sha256": "55456d528a606c271cdecf5566803582de48c50cfebf1e21c2f03423ad9c666d"
+      "bytes": 4337,
+      "sha256": "99fd96716f2066655143e48c16ea7e815e1fce0b4a8de90b3252f4212f968614"
     },
     {
       "path": "documentation/hi.md",
-      "bytes": 6163,
-      "sha256": "0a75294e298615fba43682bc579eb8f653c6495b79da586a605a603073bf4810"
+      "bytes": 7215,
+      "sha256": "e0603b0b60a5fc59c11f72f5d64a04be7835091024a60533034f3b786a114ede"
     },
     {
       "path": "documentation/it.md",
-      "bytes": 3578,
-      "sha256": "d87cd359caaa17c27738aa7bcd4da6d29a48a0bf59f32e81e54ee735fe1fe388"
+      "bytes": 4092,
+      "sha256": "75633d43b6f948569b5da3c9ef62a01bbcfe23466733f47e279ee7a2db670e7b"
     },
     {
       "path": "documentation/ja.md",
-      "bytes": 3454,
-      "sha256": "b3b944373f7c29e8854b7d91949e3e7d9e16134b2a7b08ec5102137ed06d603c"
+      "bytes": 3976,
+      "sha256": "1ecb25a847fd296d096ff7e6feb58b8df5c376f37694d52354ea0605c8d3e6f0"
     },
     {
       "path": "documentation/pt-BR.md",
-      "bytes": 3259,
-      "sha256": "e73445690ffde402551690d7744e8402b292a76cce7f9875f0aa8a10bdad7c24"
+      "bytes": 3779,
+      "sha256": "a7ceacd94b7320182320322b2c170ed5c0e6ea4de9446b1c34fdd7c0467e7bc9"
     },
     {
       "path": "documentation/zh.md",
-      "bytes": 2778,
-      "sha256": "68677b6577fcb5421b0b26f19dbb011d06db8f08cfac3ef065a692030a88036c"
+      "bytes": 3253,
+      "sha256": "6d76675cd18949ea6c7e57459d68de08e72417cb941654592e72f4ba032b71a6"
+    },
+    {
+      "path": "documented-result-examples.json",
+      "bytes": 33791,
+      "sha256": "60572b89c636f73fd4ae3212d320a236ff4f70ef46af5b4f37a8352a2900dbc1"
     },
     {
       "path": "engine/tool-code/area-valvar-aortica/calculator.js",
-      "bytes": 5567,
-      "sha256": "e07ead31e4179e43a38ea114002385ad012ccbf24fa028597dd6810c1bb669f8"
+      "bytes": 5772,
+      "sha256": "2d86aa688cc69b1c9215e0f24b005a0d5ac6bcab5188b0b9aed9de547ed9f387"
     },
     {
       "path": "evidence/publication-base-reference.json",
       "bytes": 2815,
       "sha256": "45665563b4f978cb7986f8dcde0479892534a90508ca8bbbd3ec8997717df209"
+    },
+    {
+      "path": "evidence/publication-provenance-before-output-contract.json",
+      "bytes": 11910,
+      "sha256": "ee51bd8b1edb7432228d9b52be41b43e8177051ca6e31789b5869c0969b95311"
     },
     {
       "path": "evidence/served-http-r6.json",
@@ -134,8 +144,8 @@
     },
     {
       "path": "localization.js",
-      "bytes": 46805,
-      "sha256": "80fd5b135bdf0632f108079b5e4f227793d11b7a01f2b81525c8c842739153cc"
+      "bytes": 65398,
+      "sha256": "724fea8247ac6e748fb18d0e652b1ea5c86768c1e31fcb5a9786a56b1ded635d"
     },
     {
       "path": "METHOD-CODE-LICENSE.txt",
@@ -154,23 +164,23 @@
     },
     {
       "path": "package.json",
-      "bytes": 381,
-      "sha256": "2eaada8e1e0b6c92997ec97fb56929a522ad33fe4d818094f8907dfb559d9fbe"
+      "bytes": 475,
+      "sha256": "ca6d486a26ae38dd26028f3434f68bd10fe2317c0c8c3852087fbe826179d395"
     },
     {
       "path": "portal-formatters.browser.js",
-      "bytes": 31300,
-      "sha256": "d8522ffe0b858012dfd25e5e8d10fe2eefec977f2bdb612be5cbadf5c4bed9f3"
+      "bytes": 38687,
+      "sha256": "cf0668f6fd44a80a3e4064915cf2da02d2203a9596bd39a9a0a6025fb12e17f4"
     },
     {
       "path": "publication-provenance.json",
-      "bytes": 11910,
-      "sha256": "ee51bd8b1edb7432228d9b52be41b43e8177051ca6e31789b5869c0969b95311"
+      "bytes": 6362,
+      "sha256": "d822dcf3f218825bf7545fc565e8c6127bd9c9ebc03bb1815813e24b89551b01"
     },
     {
       "path": "README.md",
-      "bytes": 3151,
-      "sha256": "8a3eada934a1936268892e713c68f5a8871b71e3a37fa4a39f02fb87819470a7"
+      "bytes": 3736,
+      "sha256": "1fcb0a2a2b07b98f2ad9ed2db7233ef28c2b2ce899f2a19570a5f687fff9f53b"
     },
     {
       "path": "rejections.json",
@@ -188,9 +198,24 @@
       "sha256": "3c20d46e436116be0c673f0260b24bbc2193fafbd15fb4659bf0e545b452487e"
     },
     {
+      "path": "source-result-contract.json",
+      "bytes": 4323,
+      "sha256": "645797efb66ed2716b57e56f9bd0f2285bc7cd226c568863dee4ca3734d0b748"
+    },
+    {
       "path": "SOURCE-RIGHTS-REVIEW.md",
       "bytes": 1690,
       "sha256": "02c73cd85c5499a73faad1272f7d6e86de9372558ab102cd4fca3926b0962ab3"
+    },
+    {
+      "path": "test-presentation-contract.cjs",
+      "bytes": 1923,
+      "sha256": "a4a1734ea3d00c17ffeed7abbd605663459b7c190b695d2396cc58da93215cec"
+    },
+    {
+      "path": "test-source-result-contract.cjs",
+      "bytes": 1416,
+      "sha256": "cbadaf0576ecc2884c7523902880d2068e3a9b6b63df418359ab42219af2e386"
     },
     {
       "path": "test.cjs",
@@ -199,8 +224,8 @@
     },
     {
       "path": "tool.json",
-      "bytes": 11976,
-      "sha256": "ebcf5f7b4b466e4264c16666acc3795f6832d5b6ae6d726b2b51e172002f204a"
+      "bytes": 13494,
+      "sha256": "57440327f11e010205eccdaef2c1c0daa1307d1381bf6490d59e5a5f482648d9"
     }
   ]
 }

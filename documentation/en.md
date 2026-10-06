@@ -89,3 +89,28 @@ Formula or classification result. Interpretation, care and applicability depend 
 Apache-2.0 applies only to ELUCENIA code. Rights to instruments, publications, translations and data remain with their respective holders. Preserve LICENSE and NOTICE.
 
 ELUCENIA · Felipe Guedes · Copyright © 2026
+
+## Documented results
+
+The information below preserves the method outputs for synthetic examples. It does not constitute independent clinical validation.
+
+### 1
+
+Significant aortic stenosis by area
+
+| Result details | |
+| --- | --- |
+| LVOT area | 3.14 cm² |
+| Dimensionless index (DVI) | 0.25 |
+| Maximum gradient (4V²) | 64 mmHg |
+
+
+### 2
+
+Moderate aortic stenosis by area
+
+| Result details | |
+| --- | --- |
+| LVOT area | 3.80 cm² |
+| Dimensionless index (DVI) | 0.37 |
+

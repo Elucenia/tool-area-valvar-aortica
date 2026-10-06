@@ -89,3 +89,28 @@ Resultado de la fórmula o clasificación. La interpretación, la conducta y la 
 Apache-2.0 se aplica únicamente al código de ELUCENIA. Los derechos de los instrumentos, publicaciones, traducciones y datos permanecen en manos de sus respectivos titulares. Conserve LICENSE y NOTICE.
 
 ELUCENIA · Felipe Guedes · Copyright © 2026
+
+## Resultados documentados
+
+La información siguiente conserva las salidas del método para ejemplos sintéticos. No constituye una validación clínica independiente.
+
+### 1
+
+Estenosis aórtica importante por área
+
+| Detalles del resultado | |
+| --- | --- |
+| Área del TSVI | 3,14 cm² |
+| Índice adimensional (DVI) | 0,25 |
+| Gradiente máximo (4V²) | 64 mmHg |
+
+
+### 2
+
+Estenosis aórtica moderada por área
+
+| Detalles del resultado | |
+| --- | --- |
+| Área del TSVI | 3,80 cm² |
+| Índice adimensional (DVI) | 0,37 |
+

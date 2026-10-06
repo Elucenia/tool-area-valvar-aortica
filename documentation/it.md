@@ -89,3 +89,28 @@ Risultato della formula o classificazione. Interpretazione, condotta e applicabi
 Apache-2.0 si applica solo al codice di ELUCENIA. I diritti su strumenti, pubblicazioni, traduzioni e dati restano ai rispettivi titolari. Conservi LICENSE e NOTICE.
 
 ELUCENIA · Felipe Guedes · Copyright © 2026
+
+## Risultati documentati
+
+Le informazioni seguenti conservano gli output del metodo per esempi sintetici. Non costituiscono una validazione clinica indipendente.
+
+### 1
+
+Stenosi aortica importante per area
+
+| Dettagli del risultato | |
+| --- | --- |
+| Area del TSVI | 3,14 cm² |
+| Indice adimensionale (DVI) | 0,25 |
+| Gradiente massimo (4V²) | 64 mmHg |
+
+
+### 2
+
+Stenosi aortica moderata per area
+
+| Dettagli del risultato | |
+| --- | --- |
+| Area del TSVI | 3,80 cm² |
+| Indice adimensionale (DVI) | 0,37 |
+

@@ -1,0 +1,159 @@
+{
+  "schema": "elucenia-public-source-result-preservation-v1",
+  "id": "area-valvar-aortica",
+  "source": {
+    "baselineFile": "reports/review-20261005-completion/public-native-output-baseline-r2/baseline.json",
+    "baselineSha256": "e5f274fa5acc74566e1c3d55afb6bb402ad9928337dd77a2945442f5b6c49439",
+    "previousCommit": "c501504cf7dee8291d19df717400d8ae4f616d5e",
+    "oldEngineSha256": "e07ead31e4179e43a38ea114002385ad012ccbf24fa028597dd6810c1bb669f8",
+    "currentEngineSha256": "2d86aa688cc69b1c9215e0f24b005a0d5ac6bcab5188b0b9aed9de547ed9f387"
+  },
+  "scope": "Existing synthetic inputs and same pinned mathematical-function outputs. Clinical interpretation correctness and professional translation are separate unperformed reviews.",
+  "clinicalApproval": "not-performed",
+  "professionalLanguageReview": "not-performed",
+  "cases": [
+    {
+      "caseIndex": 0,
+      "name": "VSVE 2,0 cm · VTI 20 · VTI aórtico 80 · Vmáx 4,0: AVA 0,79 cm² (importante)",
+      "input": {
+        "dvsve": 2,
+        "vtivsve": 20,
+        "vtiao": 80,
+        "vmax": 4
+      },
+      "publicOutput": {
+        "id": "area-valvar-aortica",
+        "main": [
+          "0,79",
+          "cm²"
+        ],
+        "label": "Área valvar aórtica",
+        "raw": {
+          "ava": 0.7853981633974483,
+          "dvi": 0.25,
+          "lvot": 3.141592653589793
+        },
+        "clinicalValidation": "not-performed"
+      },
+      "sourceExpected": {
+        "raw": {
+          "ava": 0.785,
+          "dvi": 0.25
+        },
+        "tol": 0.001,
+        "level": "high"
+      },
+      "inspectedSourceOutput": {
+        "main": [
+          "0,79",
+          "cm²"
+        ],
+        "label": "Área valvar aórtica",
+        "level": "high",
+        "verdict": "Estenose aórtica importante pela área",
+        "rows": [
+          [
+            "Área da VSVE",
+            "3,14 cm²"
+          ],
+          [
+            "Índice adimensional (DVI)",
+            "0,25"
+          ],
+          [
+            "Gradiente máximo (4V²)",
+            "64 mmHg"
+          ]
+        ],
+        "note": "",
+        "raw": {
+          "ava": 0.7853981633974483,
+          "dvi": 0.25,
+          "lvot": 3.141592653589793
+        }
+      },
+      "numericEquality": true,
+      "inspectionScope": "Same pinned source function, inspected in memory; not an independent formula/clinical oracle.",
+      "state": "source-transport-comparable",
+      "nonemptySourceFields": [
+        "verdict",
+        "level",
+        "rows"
+      ],
+      "missingPublicFields": [
+        "verdict",
+        "level",
+        "rows"
+      ]
+    },
+    {
+      "caseIndex": 1,
+      "name": "VSVE 2,2 cm · VTI 22 · VTI aórtico 60: AVA 1,39 cm² (moderada)",
+      "input": {
+        "dvsve": 2.2,
+        "vtivsve": 22,
+        "vtiao": 60
+      },
+      "publicOutput": {
+        "id": "area-valvar-aortica",
+        "main": [
+          "1,39",
+          "cm²"
+        ],
+        "label": "Área valvar aórtica",
+        "raw": {
+          "ava": 1.393819940642672,
+          "dvi": 0.36666666666666664,
+          "lvot": 3.8013271108436504
+        },
+        "clinicalValidation": "not-performed"
+      },
+      "sourceExpected": {
+        "raw": {
+          "ava": 1.3938,
+          "dvi": 0.3667
+        },
+        "tol": 0.001,
+        "level": "mid"
+      },
+      "inspectedSourceOutput": {
+        "main": [
+          "1,39",
+          "cm²"
+        ],
+        "label": "Área valvar aórtica",
+        "level": "mid",
+        "verdict": "Estenose aórtica moderada pela área",
+        "rows": [
+          [
+            "Área da VSVE",
+            "3,80 cm²"
+          ],
+          [
+            "Índice adimensional (DVI)",
+            "0,37"
+          ]
+        ],
+        "note": "",
+        "raw": {
+          "ava": 1.393819940642672,
+          "dvi": 0.36666666666666664,
+          "lvot": 3.8013271108436504
+        }
+      },
+      "numericEquality": true,
+      "inspectionScope": "Same pinned source function, inspected in memory; not an independent formula/clinical oracle.",
+      "state": "source-transport-comparable",
+      "nonemptySourceFields": [
+        "verdict",
+        "level",
+        "rows"
+      ],
+      "missingPublicFields": [
+        "verdict",
+        "level",
+        "rows"
+      ]
+    }
+  ]
+}

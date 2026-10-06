@@ -89,3 +89,28 @@ Ergebnis der Formel oder Klassifikation. Interpretation, Vorgehen und Anwendbark
 Apache-2.0 gilt nur für den ELUCENIA-Code. Die Rechte an Instrumenten, Veröffentlichungen, Übersetzungen und Daten verbleiben bei den jeweiligen Rechteinhabern. Bewahren Sie LICENSE und NOTICE auf.
 
 ELUCENIA · Felipe Guedes · Copyright © 2026
+
+## Dokumentierte Ergebnisse
+
+Die folgenden Angaben bewahren die Ausgaben der Methode für synthetische Beispiele. Sie stellen keine unabhängige klinische Validierung dar.
+
+### 1
+
+Hochgradige Aortenstenose nach Fläche
+
+| Ergebnisdetails | |
+| --- | --- |
+| LVOT-Fläche | 3,14 cm² |
+| Dimensionsloser Index (DVI) | 0,25 |
+| Maximaler Gradient (4V²) | 64 mmHg |
+
+
+### 2
+
+Mäßige Aortenstenose nach Fläche
+
+| Ergebnisdetails | |
+| --- | --- |
+| LVOT-Fläche | 3,80 cm² |
+| Dimensionsloser Index (DVI) | 0,37 |
+

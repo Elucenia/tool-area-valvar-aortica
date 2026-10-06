@@ -1,0 +1,1072 @@
+{
+  "id": "area-valvar-aortica",
+  "implementationVersion": "area-valvar-aortica@native-2026-10-05+2d86aa688cc6",
+  "scope": "Rendered current output against the same source method; not an independent numerical/clinical oracle",
+  "locales": {
+    "pt-BR": [
+      {
+        "name": "VSVE 2,0 cm · VTI 20 · VTI aórtico 80 · Vmáx 4,0: AVA 0,79 cm² (importante)",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Área da VSVE",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              },
+              "value": {
+                "text": "3,14 cm²",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "Índice adimensional (DVI)",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              },
+              "value": {
+                "text": "0,25",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              }
+            },
+            {
+              "key": "documented-2",
+              "label": {
+                "text": "Gradiente máximo (4V²)",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              },
+              "value": {
+                "text": "64 mmHg",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Estenose aórtica importante pela área",
+            "locale": "pt-BR",
+            "template": "documented-source"
+          },
+          "level": "high"
+        }
+      },
+      {
+        "name": "VSVE 2,2 cm · VTI 22 · VTI aórtico 60: AVA 1,39 cm² (moderada)",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Área da VSVE",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              },
+              "value": {
+                "text": "3,80 cm²",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "Índice adimensional (DVI)",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              },
+              "value": {
+                "text": "0,37",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Estenose aórtica moderada pela área",
+            "locale": "pt-BR",
+            "template": "documented-source"
+          },
+          "level": "mid"
+        }
+      }
+    ],
+    "en": [
+      {
+        "name": "VSVE 2,0 cm · VTI 20 · VTI aórtico 80 · Vmáx 4,0: AVA 0,79 cm² (importante)",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "LVOT area",
+                "locale": "en",
+                "template": "documented-authored-523cd9c609b25c6e96a1"
+              },
+              "value": {
+                "text": "3.14 cm²",
+                "locale": "en",
+                "template": "documented-authored-dc429c4844d2007f6047",
+                "sourceNumbers": [
+                  3.14
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "Dimensionless index (DVI)",
+                "locale": "en",
+                "template": "documented-authored-e80de0e3a01c1b083491"
+              },
+              "value": {
+                "text": "0.25",
+                "locale": "en",
+                "template": "documented-authored-363041ddf9a806fb238c",
+                "sourceNumbers": [
+                  0.25
+                ]
+              }
+            },
+            {
+              "key": "documented-2",
+              "label": {
+                "text": "Maximum gradient (4V²)",
+                "locale": "en",
+                "template": "documented-authored-2dea6a7fa7806385282e"
+              },
+              "value": {
+                "text": "64 mmHg",
+                "locale": "en",
+                "template": "documented-authored-1162fa603709dfa75785",
+                "sourceNumbers": [
+                  64
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Significant aortic stenosis by area",
+            "locale": "en",
+            "template": "documented-authored-5f7b516c882be4c6469c"
+          },
+          "level": "high"
+        }
+      },
+      {
+        "name": "VSVE 2,2 cm · VTI 22 · VTI aórtico 60: AVA 1,39 cm² (moderada)",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "LVOT area",
+                "locale": "en",
+                "template": "documented-authored-523cd9c609b25c6e96a1"
+              },
+              "value": {
+                "text": "3.80 cm²",
+                "locale": "en",
+                "template": "documented-authored-dc429c4844d2007f6047",
+                "sourceNumbers": [
+                  3.8
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "Dimensionless index (DVI)",
+                "locale": "en",
+                "template": "documented-authored-e80de0e3a01c1b083491"
+              },
+              "value": {
+                "text": "0.37",
+                "locale": "en",
+                "template": "documented-authored-363041ddf9a806fb238c",
+                "sourceNumbers": [
+                  0.37
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Moderate aortic stenosis by area",
+            "locale": "en",
+            "template": "documented-authored-23eb053288dd4bc4a2d9"
+          },
+          "level": "mid"
+        }
+      }
+    ],
+    "es": [
+      {
+        "name": "VSVE 2,0 cm · VTI 20 · VTI aórtico 80 · Vmáx 4,0: AVA 0,79 cm² (importante)",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Área del TSVI",
+                "locale": "es",
+                "template": "documented-authored-523cd9c609b25c6e96a1"
+              },
+              "value": {
+                "text": "3,14 cm²",
+                "locale": "es",
+                "template": "documented-authored-dc429c4844d2007f6047",
+                "sourceNumbers": [
+                  3.14
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "Índice adimensional (DVI)",
+                "locale": "es",
+                "template": "documented-authored-e80de0e3a01c1b083491"
+              },
+              "value": {
+                "text": "0,25",
+                "locale": "es",
+                "template": "documented-authored-363041ddf9a806fb238c",
+                "sourceNumbers": [
+                  0.25
+                ]
+              }
+            },
+            {
+              "key": "documented-2",
+              "label": {
+                "text": "Gradiente máximo (4V²)",
+                "locale": "es",
+                "template": "documented-authored-2dea6a7fa7806385282e"
+              },
+              "value": {
+                "text": "64 mmHg",
+                "locale": "es",
+                "template": "documented-authored-1162fa603709dfa75785",
+                "sourceNumbers": [
+                  64
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Estenosis aórtica importante por área",
+            "locale": "es",
+            "template": "documented-authored-5f7b516c882be4c6469c"
+          },
+          "level": "high"
+        }
+      },
+      {
+        "name": "VSVE 2,2 cm · VTI 22 · VTI aórtico 60: AVA 1,39 cm² (moderada)",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Área del TSVI",
+                "locale": "es",
+                "template": "documented-authored-523cd9c609b25c6e96a1"
+              },
+              "value": {
+                "text": "3,80 cm²",
+                "locale": "es",
+                "template": "documented-authored-dc429c4844d2007f6047",
+                "sourceNumbers": [
+                  3.8
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "Índice adimensional (DVI)",
+                "locale": "es",
+                "template": "documented-authored-e80de0e3a01c1b083491"
+              },
+              "value": {
+                "text": "0,37",
+                "locale": "es",
+                "template": "documented-authored-363041ddf9a806fb238c",
+                "sourceNumbers": [
+                  0.37
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Estenosis aórtica moderada por área",
+            "locale": "es",
+            "template": "documented-authored-23eb053288dd4bc4a2d9"
+          },
+          "level": "mid"
+        }
+      }
+    ],
+    "fr": [
+      {
+        "name": "VSVE 2,0 cm · VTI 20 · VTI aórtico 80 · Vmáx 4,0: AVA 0,79 cm² (importante)",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Surface du TSVI",
+                "locale": "fr",
+                "template": "documented-authored-523cd9c609b25c6e96a1"
+              },
+              "value": {
+                "text": "3,14 cm²",
+                "locale": "fr",
+                "template": "documented-authored-dc429c4844d2007f6047",
+                "sourceNumbers": [
+                  3.14
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "Indice sans dimension (DVI)",
+                "locale": "fr",
+                "template": "documented-authored-e80de0e3a01c1b083491"
+              },
+              "value": {
+                "text": "0,25",
+                "locale": "fr",
+                "template": "documented-authored-363041ddf9a806fb238c",
+                "sourceNumbers": [
+                  0.25
+                ]
+              }
+            },
+            {
+              "key": "documented-2",
+              "label": {
+                "text": "Gradient maximal (4V²)",
+                "locale": "fr",
+                "template": "documented-authored-2dea6a7fa7806385282e"
+              },
+              "value": {
+                "text": "64 mmHg",
+                "locale": "fr",
+                "template": "documented-authored-1162fa603709dfa75785",
+                "sourceNumbers": [
+                  64
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Sténose aortique importante selon la surface",
+            "locale": "fr",
+            "template": "documented-authored-5f7b516c882be4c6469c"
+          },
+          "level": "high"
+        }
+      },
+      {
+        "name": "VSVE 2,2 cm · VTI 22 · VTI aórtico 60: AVA 1,39 cm² (moderada)",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Surface du TSVI",
+                "locale": "fr",
+                "template": "documented-authored-523cd9c609b25c6e96a1"
+              },
+              "value": {
+                "text": "3,80 cm²",
+                "locale": "fr",
+                "template": "documented-authored-dc429c4844d2007f6047",
+                "sourceNumbers": [
+                  3.8
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "Indice sans dimension (DVI)",
+                "locale": "fr",
+                "template": "documented-authored-e80de0e3a01c1b083491"
+              },
+              "value": {
+                "text": "0,37",
+                "locale": "fr",
+                "template": "documented-authored-363041ddf9a806fb238c",
+                "sourceNumbers": [
+                  0.37
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Sténose aortique modérée selon la surface",
+            "locale": "fr",
+            "template": "documented-authored-23eb053288dd4bc4a2d9"
+          },
+          "level": "mid"
+        }
+      }
+    ],
+    "de": [
+      {
+        "name": "VSVE 2,0 cm · VTI 20 · VTI aórtico 80 · Vmáx 4,0: AVA 0,79 cm² (importante)",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "LVOT-Fläche",
+                "locale": "de",
+                "template": "documented-authored-523cd9c609b25c6e96a1"
+              },
+              "value": {
+                "text": "3,14 cm²",
+                "locale": "de",
+                "template": "documented-authored-dc429c4844d2007f6047",
+                "sourceNumbers": [
+                  3.14
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "Dimensionsloser Index (DVI)",
+                "locale": "de",
+                "template": "documented-authored-e80de0e3a01c1b083491"
+              },
+              "value": {
+                "text": "0,25",
+                "locale": "de",
+                "template": "documented-authored-363041ddf9a806fb238c",
+                "sourceNumbers": [
+                  0.25
+                ]
+              }
+            },
+            {
+              "key": "documented-2",
+              "label": {
+                "text": "Maximaler Gradient (4V²)",
+                "locale": "de",
+                "template": "documented-authored-2dea6a7fa7806385282e"
+              },
+              "value": {
+                "text": "64 mmHg",
+                "locale": "de",
+                "template": "documented-authored-1162fa603709dfa75785",
+                "sourceNumbers": [
+                  64
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Hochgradige Aortenstenose nach Fläche",
+            "locale": "de",
+            "template": "documented-authored-5f7b516c882be4c6469c"
+          },
+          "level": "high"
+        }
+      },
+      {
+        "name": "VSVE 2,2 cm · VTI 22 · VTI aórtico 60: AVA 1,39 cm² (moderada)",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "LVOT-Fläche",
+                "locale": "de",
+                "template": "documented-authored-523cd9c609b25c6e96a1"
+              },
+              "value": {
+                "text": "3,80 cm²",
+                "locale": "de",
+                "template": "documented-authored-dc429c4844d2007f6047",
+                "sourceNumbers": [
+                  3.8
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "Dimensionsloser Index (DVI)",
+                "locale": "de",
+                "template": "documented-authored-e80de0e3a01c1b083491"
+              },
+              "value": {
+                "text": "0,37",
+                "locale": "de",
+                "template": "documented-authored-363041ddf9a806fb238c",
+                "sourceNumbers": [
+                  0.37
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Mäßige Aortenstenose nach Fläche",
+            "locale": "de",
+            "template": "documented-authored-23eb053288dd4bc4a2d9"
+          },
+          "level": "mid"
+        }
+      }
+    ],
+    "it": [
+      {
+        "name": "VSVE 2,0 cm · VTI 20 · VTI aórtico 80 · Vmáx 4,0: AVA 0,79 cm² (importante)",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Area del TSVI",
+                "locale": "it",
+                "template": "documented-authored-523cd9c609b25c6e96a1"
+              },
+              "value": {
+                "text": "3,14 cm²",
+                "locale": "it",
+                "template": "documented-authored-dc429c4844d2007f6047",
+                "sourceNumbers": [
+                  3.14
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "Indice adimensionale (DVI)",
+                "locale": "it",
+                "template": "documented-authored-e80de0e3a01c1b083491"
+              },
+              "value": {
+                "text": "0,25",
+                "locale": "it",
+                "template": "documented-authored-363041ddf9a806fb238c",
+                "sourceNumbers": [
+                  0.25
+                ]
+              }
+            },
+            {
+              "key": "documented-2",
+              "label": {
+                "text": "Gradiente massimo (4V²)",
+                "locale": "it",
+                "template": "documented-authored-2dea6a7fa7806385282e"
+              },
+              "value": {
+                "text": "64 mmHg",
+                "locale": "it",
+                "template": "documented-authored-1162fa603709dfa75785",
+                "sourceNumbers": [
+                  64
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Stenosi aortica importante per area",
+            "locale": "it",
+            "template": "documented-authored-5f7b516c882be4c6469c"
+          },
+          "level": "high"
+        }
+      },
+      {
+        "name": "VSVE 2,2 cm · VTI 22 · VTI aórtico 60: AVA 1,39 cm² (moderada)",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Area del TSVI",
+                "locale": "it",
+                "template": "documented-authored-523cd9c609b25c6e96a1"
+              },
+              "value": {
+                "text": "3,80 cm²",
+                "locale": "it",
+                "template": "documented-authored-dc429c4844d2007f6047",
+                "sourceNumbers": [
+                  3.8
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "Indice adimensionale (DVI)",
+                "locale": "it",
+                "template": "documented-authored-e80de0e3a01c1b083491"
+              },
+              "value": {
+                "text": "0,37",
+                "locale": "it",
+                "template": "documented-authored-363041ddf9a806fb238c",
+                "sourceNumbers": [
+                  0.37
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Stenosi aortica moderata per area",
+            "locale": "it",
+            "template": "documented-authored-23eb053288dd4bc4a2d9"
+          },
+          "level": "mid"
+        }
+      }
+    ],
+    "ar": [
+      {
+        "name": "VSVE 2,0 cm · VTI 20 · VTI aórtico 80 · Vmáx 4,0: AVA 0,79 cm² (importante)",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "مساحة مخرج البطين الأيسر",
+                "locale": "ar",
+                "template": "documented-authored-523cd9c609b25c6e96a1"
+              },
+              "value": {
+                "text": "٣٫١٤ cm²",
+                "locale": "ar",
+                "template": "documented-authored-dc429c4844d2007f6047",
+                "sourceNumbers": [
+                  3.14
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "المؤشر عديم الأبعاد (DVI)",
+                "locale": "ar",
+                "template": "documented-authored-e80de0e3a01c1b083491"
+              },
+              "value": {
+                "text": "٠٫٢٥",
+                "locale": "ar",
+                "template": "documented-authored-363041ddf9a806fb238c",
+                "sourceNumbers": [
+                  0.25
+                ]
+              }
+            },
+            {
+              "key": "documented-2",
+              "label": {
+                "text": "أقصى تدرج (4V²)",
+                "locale": "ar",
+                "template": "documented-authored-2dea6a7fa7806385282e"
+              },
+              "value": {
+                "text": "٦٤ mmHg",
+                "locale": "ar",
+                "template": "documented-authored-1162fa603709dfa75785",
+                "sourceNumbers": [
+                  64
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "تضيق أبهري مهم بحسب المساحة",
+            "locale": "ar",
+            "template": "documented-authored-5f7b516c882be4c6469c"
+          },
+          "level": "high"
+        }
+      },
+      {
+        "name": "VSVE 2,2 cm · VTI 22 · VTI aórtico 60: AVA 1,39 cm² (moderada)",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "مساحة مخرج البطين الأيسر",
+                "locale": "ar",
+                "template": "documented-authored-523cd9c609b25c6e96a1"
+              },
+              "value": {
+                "text": "٣٫٨٠ cm²",
+                "locale": "ar",
+                "template": "documented-authored-dc429c4844d2007f6047",
+                "sourceNumbers": [
+                  3.8
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "المؤشر عديم الأبعاد (DVI)",
+                "locale": "ar",
+                "template": "documented-authored-e80de0e3a01c1b083491"
+              },
+              "value": {
+                "text": "٠٫٣٧",
+                "locale": "ar",
+                "template": "documented-authored-363041ddf9a806fb238c",
+                "sourceNumbers": [
+                  0.37
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "تضيق أبهري متوسط بحسب المساحة",
+            "locale": "ar",
+            "template": "documented-authored-23eb053288dd4bc4a2d9"
+          },
+          "level": "mid"
+        }
+      }
+    ],
+    "zh": [
+      {
+        "name": "VSVE 2,0 cm · VTI 20 · VTI aórtico 80 · Vmáx 4,0: AVA 0,79 cm² (importante)",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "左室流出道面积",
+                "locale": "zh",
+                "template": "documented-authored-523cd9c609b25c6e96a1"
+              },
+              "value": {
+                "text": "3.14 cm²",
+                "locale": "zh",
+                "template": "documented-authored-dc429c4844d2007f6047",
+                "sourceNumbers": [
+                  3.14
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "无量纲指数（DVI）",
+                "locale": "zh",
+                "template": "documented-authored-e80de0e3a01c1b083491"
+              },
+              "value": {
+                "text": "0.25",
+                "locale": "zh",
+                "template": "documented-authored-363041ddf9a806fb238c",
+                "sourceNumbers": [
+                  0.25
+                ]
+              }
+            },
+            {
+              "key": "documented-2",
+              "label": {
+                "text": "最大压差梯度（4V²）",
+                "locale": "zh",
+                "template": "documented-authored-2dea6a7fa7806385282e"
+              },
+              "value": {
+                "text": "64 mmHg",
+                "locale": "zh",
+                "template": "documented-authored-1162fa603709dfa75785",
+                "sourceNumbers": [
+                  64
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "按面积判定为重度主动脉瓣狭窄",
+            "locale": "zh",
+            "template": "documented-authored-5f7b516c882be4c6469c"
+          },
+          "level": "high"
+        }
+      },
+      {
+        "name": "VSVE 2,2 cm · VTI 22 · VTI aórtico 60: AVA 1,39 cm² (moderada)",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "左室流出道面积",
+                "locale": "zh",
+                "template": "documented-authored-523cd9c609b25c6e96a1"
+              },
+              "value": {
+                "text": "3.80 cm²",
+                "locale": "zh",
+                "template": "documented-authored-dc429c4844d2007f6047",
+                "sourceNumbers": [
+                  3.8
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "无量纲指数（DVI）",
+                "locale": "zh",
+                "template": "documented-authored-e80de0e3a01c1b083491"
+              },
+              "value": {
+                "text": "0.37",
+                "locale": "zh",
+                "template": "documented-authored-363041ddf9a806fb238c",
+                "sourceNumbers": [
+                  0.37
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "按面积分级为中度主动脉瓣狭窄",
+            "locale": "zh",
+            "template": "documented-authored-23eb053288dd4bc4a2d9"
+          },
+          "level": "mid"
+        }
+      }
+    ],
+    "ja": [
+      {
+        "name": "VSVE 2,0 cm · VTI 20 · VTI aórtico 80 · Vmáx 4,0: AVA 0,79 cm² (importante)",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "LVOT面積",
+                "locale": "ja",
+                "template": "documented-authored-523cd9c609b25c6e96a1"
+              },
+              "value": {
+                "text": "3.14 cm²",
+                "locale": "ja",
+                "template": "documented-authored-dc429c4844d2007f6047",
+                "sourceNumbers": [
+                  3.14
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "無次元指数（DVI）",
+                "locale": "ja",
+                "template": "documented-authored-e80de0e3a01c1b083491"
+              },
+              "value": {
+                "text": "0.25",
+                "locale": "ja",
+                "template": "documented-authored-363041ddf9a806fb238c",
+                "sourceNumbers": [
+                  0.25
+                ]
+              }
+            },
+            {
+              "key": "documented-2",
+              "label": {
+                "text": "最大圧較差（4V²）",
+                "locale": "ja",
+                "template": "documented-authored-2dea6a7fa7806385282e"
+              },
+              "value": {
+                "text": "64 mmHg",
+                "locale": "ja",
+                "template": "documented-authored-1162fa603709dfa75785",
+                "sourceNumbers": [
+                  64
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "面積による重度大動脈弁狭窄",
+            "locale": "ja",
+            "template": "documented-authored-5f7b516c882be4c6469c"
+          },
+          "level": "high"
+        }
+      },
+      {
+        "name": "VSVE 2,2 cm · VTI 22 · VTI aórtico 60: AVA 1,39 cm² (moderada)",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "LVOT面積",
+                "locale": "ja",
+                "template": "documented-authored-523cd9c609b25c6e96a1"
+              },
+              "value": {
+                "text": "3.80 cm²",
+                "locale": "ja",
+                "template": "documented-authored-dc429c4844d2007f6047",
+                "sourceNumbers": [
+                  3.8
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "無次元指数（DVI）",
+                "locale": "ja",
+                "template": "documented-authored-e80de0e3a01c1b083491"
+              },
+              "value": {
+                "text": "0.37",
+                "locale": "ja",
+                "template": "documented-authored-363041ddf9a806fb238c",
+                "sourceNumbers": [
+                  0.37
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "面積による中等度大動脈弁狭窄",
+            "locale": "ja",
+            "template": "documented-authored-23eb053288dd4bc4a2d9"
+          },
+          "level": "mid"
+        }
+      }
+    ],
+    "hi": [
+      {
+        "name": "VSVE 2,0 cm · VTI 20 · VTI aórtico 80 · Vmáx 4,0: AVA 0,79 cm² (importante)",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "LVOT क्षेत्रफल",
+                "locale": "hi",
+                "template": "documented-authored-523cd9c609b25c6e96a1"
+              },
+              "value": {
+                "text": "3.14 cm²",
+                "locale": "hi",
+                "template": "documented-authored-dc429c4844d2007f6047",
+                "sourceNumbers": [
+                  3.14
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "आयामरहित सूचकांक (DVI)",
+                "locale": "hi",
+                "template": "documented-authored-e80de0e3a01c1b083491"
+              },
+              "value": {
+                "text": "0.25",
+                "locale": "hi",
+                "template": "documented-authored-363041ddf9a806fb238c",
+                "sourceNumbers": [
+                  0.25
+                ]
+              }
+            },
+            {
+              "key": "documented-2",
+              "label": {
+                "text": "अधिकतम ग्रेडिएंट (4V²)",
+                "locale": "hi",
+                "template": "documented-authored-2dea6a7fa7806385282e"
+              },
+              "value": {
+                "text": "64 mmHg",
+                "locale": "hi",
+                "template": "documented-authored-1162fa603709dfa75785",
+                "sourceNumbers": [
+                  64
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "क्षेत्रफल के आधार पर महत्वपूर्ण महाधमनी संकुचन",
+            "locale": "hi",
+            "template": "documented-authored-5f7b516c882be4c6469c"
+          },
+          "level": "high"
+        }
+      },
+      {
+        "name": "VSVE 2,2 cm · VTI 22 · VTI aórtico 60: AVA 1,39 cm² (moderada)",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "LVOT क्षेत्रफल",
+                "locale": "hi",
+                "template": "documented-authored-523cd9c609b25c6e96a1"
+              },
+              "value": {
+                "text": "3.80 cm²",
+                "locale": "hi",
+                "template": "documented-authored-dc429c4844d2007f6047",
+                "sourceNumbers": [
+                  3.8
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "आयामरहित सूचकांक (DVI)",
+                "locale": "hi",
+                "template": "documented-authored-e80de0e3a01c1b083491"
+              },
+              "value": {
+                "text": "0.37",
+                "locale": "hi",
+                "template": "documented-authored-363041ddf9a806fb238c",
+                "sourceNumbers": [
+                  0.37
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "क्षेत्रफल के आधार पर मध्यम महाधमनी स्टेनोसिस",
+            "locale": "hi",
+            "template": "documented-authored-23eb053288dd4bc4a2d9"
+          },
+          "level": "mid"
+        }
+      }
+    ]
+  }
+}
